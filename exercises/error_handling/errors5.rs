@@ -1,3 +1,4 @@
+// I AM NOT DONE
 // errors5.rs
 //
 // This program uses an altered version of the code from errors4.
@@ -21,8 +22,6 @@
 //
 // Execute `rustlings hint errors5` or use the `hint` watch subcommand for a
 // hint.
-
-// I AM NOT DONE
 
 use std::error;
 use std::fmt;

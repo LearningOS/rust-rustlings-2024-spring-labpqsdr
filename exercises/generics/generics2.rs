@@ -1,3 +1,4 @@
+// I AM NOT DONE
 // generics2.rs
 //
 // This powerful wrapper provides the ability to store a positive integer value.
@@ -5,8 +6,6 @@
 //
 // Execute `rustlings hint generics2` or use the `hint` watch subcommand for a
 // hint.
-
-// I AM NOT DONE
 
 struct Wrapper {
     value: u32,

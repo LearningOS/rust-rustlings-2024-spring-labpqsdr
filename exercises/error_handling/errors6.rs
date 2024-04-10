@@ -1,3 +1,4 @@
+// I AM NOT DONE
 // errors6.rs
 //
 // Using catch-all error types like `Box<dyn error::Error>` isn't recommended
@@ -8,8 +9,6 @@
 //
 // Execute `rustlings hint errors6` or use the `hint` watch subcommand for a
 // hint.
-
-// I AM NOT DONE
 
 use std::num::ParseIntError;
 
