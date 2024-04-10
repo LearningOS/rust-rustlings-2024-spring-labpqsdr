@@ -1,4 +1,3 @@
-// I AM NOT DONE
 // errors5.rs
 //
 // This program uses an altered version of the code from errors4.
@@ -24,11 +23,12 @@
 // hint.
 
 use std::error;
+use std::error::Error;
 use std::fmt;
 use std::num::ParseIntError;
 
 // TODO: update the return type of `main()` to make this compile.
-fn main() -> Result<(), Box<dyn ???>> {
+fn main() -> Result<(), Box<dyn Error>> {
     let pretend_user_input = "42";
     let x: i64 = pretend_user_input.parse()?;
     println!("output={:?}", PositiveNonzeroInteger::new(x)?);

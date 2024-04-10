@@ -1,4 +1,3 @@
-// I AM NOT DONE
 // errors6.rs
 //
 // Using catch-all error types like `Box<dyn error::Error>` isn't recommended
@@ -25,12 +24,15 @@ impl ParsePosNonzeroError {
     }
     // TODO: add another error conversion function here.
     // fn from_parseint...
+    fn from_parseint(err: ParseIntError) -> ParsePosNonzeroError {
+        ParsePosNonzeroError::ParseInt(err)
+    }
 }
 
 fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroError> {
     // TODO: change this to return an appropriate error instead of panicking
     // when `parse()` returns an error.
-    let x: i64 = s.parse().unwrap();
+    let x: i64 = s.parse().map_err(ParsePosNonzeroError::from_parseint)?;
     PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
 }
 

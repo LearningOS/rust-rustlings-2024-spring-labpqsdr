@@ -1,4 +1,3 @@
-// I AM NOT DONE
 // generics1.rs
 //
 // This shopping list program isn't compiling! Use your knowledge of generics to
@@ -8,6 +7,6 @@
 // hint.
 
 fn main() {
-    let mut shopping_list: Vec<?> = Vec::new();
+    let mut shopping_list: Vec<&str> = Vec::new();
     shopping_list.push("milk");
 }
